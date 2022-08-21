@@ -20,6 +20,7 @@ body{
     height: 700px;
     display: grid;
     background-color: white;
+    border: 1px solid red;
 }
 
 input{
@@ -31,18 +32,41 @@ h1{
     margin-top: 30px;
     font-size: 3rem;
 }
-.squareDiv{
-    border: 1px solid black;
-}
 
 button{
     margin-top: 30px;
-    width: 100px;
-    padding: 10px;
+    width: 300px;
+    padding: 15px 10px;
     border-style: none;
     border-radius: 5px;
     background-color: rgb(120, 116, 102);
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 800;
+    transition: all 0.17s;
 }
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.side-menu{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 7%;
+    left: 0px;
+    border: 1px solid red;
+
+}
+
+#favcolor{
+    width: 100px;
+    height: 100px;
+    border: unset;
+
+}
+
