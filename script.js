@@ -8,6 +8,8 @@ let buttons = document.querySelectorAll('button');
 
 let color = document.getElementById('favcolor');
 
+let range = document.getElementById('range');
+
 let clear = document.getElementById('clear');
 
 
@@ -28,6 +30,7 @@ let clear = document.getElementById('clear');
 
         container.style.gridTemplateColumns = `repeat(${rangeValue}, 1fr)`;
         container.style.gridTemplateRows = `repeat(${rangeValue}, 1fr)`;
+
 
         for (let i = 0; i < gridSize; i++) {
             let square = document.createElement('div');
@@ -50,7 +53,9 @@ let clear = document.getElementById('clear');
             square.style.backgroundColor = 'white';
             })
         
-            
+            range.addEventListener('mousedown', ()=>{
+                square.style.backgroundColor = 'white';
+            })
         }
     }
     etchAsketch();
