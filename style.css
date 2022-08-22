@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(239, 237, 234);
+    background-color: rgb(239, 239, 239);
 }
 
 .container{
@@ -20,7 +20,7 @@ body{
     height: 700px;
     display: grid;
     background-color: white;
-    border: 1px solid red;
+
 }
 
 input{
@@ -35,14 +35,19 @@ h1{
 
 button{
     margin-top: 30px;
-    width: 300px;
-    padding: 15px 10px;
+    margin-bottom: 50px;
+    width: 350px;
+    height: 150px;
+    border-radius: 50%;
     border-style: none;
-    border-radius: 5px;
     background-color: rgb(120, 116, 102);
-    color: white;
+    color: rgb(70, 65, 60);
     font-size: 1.5rem;
     font-weight: 800;
+    border-radius: 47px;
+background: #f0f0f0;
+box-shadow:  24px 24px 48px #e4e4e4,
+             -24px -24px 48px #fcfcfc;
     transition: all 0.17s;
 }
 
@@ -59,7 +64,6 @@ button:hover{
     position: absolute;
     margin-left: 7%;
     left: 0px;
-    border: 1px solid red;
 
 }
 
@@ -70,3 +74,16 @@ button:hover{
 
 }
 
+#rainbow:active{
+    background-color: rgb(55, 53, 44) ;
+}
+
+#num{
+    border-radius: 50%;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    background-color: rgb(200, 184, 163);
+
+}

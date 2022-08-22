@@ -14,10 +14,14 @@
         <button id="clear">Clear</button>
 
         <button id="rainbow">Rainbow</button>
+        <button id="eraser">Eraser</button>
     </div>
     <h1>Etch-A-Sketch</h1>
-    <input type="range" name="" id="range" min="8" max="64" step="8" value="0" onchange="etchAsketch()"oninput="num.value = this.value">
-    <output id="num">8</output>
+    <div class="rangeDiv">
+        <input type="range" name="" id="range" min="8" max="64" step="8" value="0" onchange="etchAsketch()"oninput="num.value = this.value">
+        <output id="num">8</output>
+    </div>
+   
     <!-- <div class="buttons">
         <button class="64">8 x 8</button>
     <button class="256">16 x 16</button>

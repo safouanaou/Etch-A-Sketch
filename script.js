@@ -12,6 +12,11 @@ let range = document.getElementById('range');
 
 let clear = document.getElementById('clear');
 
+let rainbow = document.getElementById('rainbow');
+
+let randomColor = Math.floor(Math.random()*16777215).toString(16);
+
+let eraser = document.getElementById('eraser');
 
 // dynamic grid size
     // buttons.forEach((button)=>{
@@ -39,20 +44,51 @@ let clear = document.getElementById('clear');
             container.appendChild(square);   
 
             square.addEventListener('mouseover', function(event) {
-                if(event.buttons == 1) {
-                 event.preventDefault();
-               
-                 let colorInpt = color.value;
-                 square.style.backgroundColor = colorInpt;
-               
-                }
-               });
+                    if(event.buttons == 1) {
+                     event.preventDefault();
+
+                   
+                    let colorInpt = color.value;
+                    square.style.backgroundColor = colorInpt;
+    
+                    }
+                   });
+
+
+                //    making a button that makes random colors
+                   rainbow.addEventListener('click', ()=>{
+                    square.addEventListener('mouseover', function(event) {
+                        if(event.buttons == 1) {
+                         event.preventDefault();
+    
+                       
+                        square.style.backgroundColor = `hsl(${Math.random()*360}, 100%, 50%)`
+        
+                        }
+                       });
+                   })
+
+
+
+                   eraser.addEventListener('click', ()=>{
+                        square.addEventListener('mouseover', function(event) {
+                            if(event.buttons == 1) {
+                                event.preventDefault();
+    
+                       
+                             square.style.backgroundColor = 'white';
+        
+                            }
+                       });
+                   })
+                   
 
             //creating a button to clean the borad
             clear.addEventListener('click', ()=>{
             square.style.backgroundColor = 'white';
             })
-        
+            
+            // clear board when changing grid zize
             range.addEventListener('mousedown', ()=>{
                 square.style.backgroundColor = 'white';
             })
