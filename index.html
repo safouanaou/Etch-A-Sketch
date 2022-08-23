@@ -9,17 +9,26 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    
     <div class="side-menu">
-        <input type="color" name="favcolor" id="favcolor">
-        <button id="clear">Clear</button>
-
+        <button id="black">Black</button>
         <button id="rainbow">Rainbow</button>
         <button id="eraser">Eraser</button>
+        <button id="clear">Clear</button>
+
+        
+        
     </div>
     <h1>Etch-A-Sketch</h1>
     <div class="rangeDiv">
+        <h2 id="grid-size">Grid Size</h2>
         <input type="range" name="" id="range" min="8" max="64" step="8" value="0" onchange="etchAsketch()"oninput="num.value = this.value">
         <output id="num">8</output>
+        <div class="color-pick">
+            <h2 id="color-picker">Color Picker</h2>
+            <input type="color" name="favcolor" id="favcolor">
+        </div>
+        
     </div>
    
     <!-- <div class="buttons">

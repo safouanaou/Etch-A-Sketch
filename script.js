@@ -18,6 +18,8 @@ let randomColor = Math.floor(Math.random()*16777215).toString(16);
 
 let eraser = document.getElementById('eraser');
 
+let black = document.getElementById('black');
+
 // dynamic grid size
     // buttons.forEach((button)=>{
     //     button.addEventListener('click', ()=>{
@@ -69,7 +71,7 @@ let eraser = document.getElementById('eraser');
                    })
 
 
-
+                //    creating an eraser button
                    eraser.addEventListener('click', ()=>{
                         square.addEventListener('mouseover', function(event) {
                             if(event.buttons == 1) {
@@ -81,6 +83,19 @@ let eraser = document.getElementById('eraser');
                             }
                        });
                    })
+
+
+                   black.addEventListener('click', ()=>{
+                    square.addEventListener('mouseover', function(event) {
+                        if(event.buttons == 1) {
+                            event.preventDefault();
+
+                   
+                         square.style.backgroundColor = 'black';
+    
+                        }
+                   });
+                   });
                    
 
             //creating a button to clean the borad
@@ -97,7 +112,7 @@ let eraser = document.getElementById('eraser');
     etchAsketch();
 
 
-    
+    console.log(Math.random()*360)
 
 
             

@@ -20,8 +20,8 @@ body{
     height: 700px;
     display: grid;
     background-color: white;
-
 }
+
 
 input{
     margin-top: 30px;
@@ -36,9 +36,8 @@ h1{
 button{
     margin-top: 30px;
     margin-bottom: 50px;
-    width: 350px;
-    height: 150px;
-    border-radius: 50%;
+    width: 200px;
+    height: 100px;
     border-style: none;
     background-color: rgb(120, 116, 102);
     color: rgb(70, 65, 60);
@@ -62,10 +61,26 @@ button:hover{
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin-left: 7%;
-    left: 0px;
+    left: 10%;
+    bottom: 12%;
 
 }
+
+#grid-size{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    align-self: center;
+}
+
+.rangeDiv{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 16%;
+    margin-right: 7%;
+    right: 0px;
+}
+
 
 #favcolor{
     width: 100px;
@@ -79,11 +94,38 @@ button:hover{
 }
 
 #num{
-    border-radius: 50%;
-    padding: 10px 20px;
+    position: absolute;
+    bottom: -270px;
+    right: 67px;
+    border-radius: 20%;
+    padding: 60px 80px;
     margin-left: 10px;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 500;
-    background-color: rgb(200, 184, 163);
+    background: #f0f0f0;
+box-shadow:  24px 24px 48px #e4e4e4,
+             -24px -24px 48px #fcfcfc;
+    transition: all 0.17s;
 
+}
+
+#color-picker{
+    align-self: center;
+    font-size: 2rem;
+}
+
+#favcolor{
+   
+    width: 260px;
+    height: 60px;
+}
+
+.color-pick{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -520px;
+    right: 30px;
+    justify-content: center;
+   
 }
