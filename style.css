@@ -43,7 +43,7 @@ button{
     color: rgb(70, 65, 60);
     font-size: 1.5rem;
     font-weight: 800;
-    border-radius: 47px;
+    border-radius: 20px;
 background: #f0f0f0;
 box-shadow:  24px 24px 48px #e4e4e4,
              -24px -24px 48px #fcfcfc;
@@ -57,14 +57,23 @@ button:hover{
 
 
 .side-menu{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     position: absolute;
-    left: 10%;
-    bottom: 12%;
-
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    left: 4%;
+    bottom: 14%;
+    width: 500px;
 }
+
+.colpick{
+    grid-column: 1 / 3;
+    margin-bottom: 100px;
+    justify-self: center;
+}
+
+
 
 #grid-size{
     margin-bottom: 10px;
@@ -76,15 +85,15 @@ button:hover{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 16%;
+    top: 26%;
     margin-right: 7%;
     right: 0px;
 }
 
 
 #favcolor{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border: unset;
 
 }
@@ -114,10 +123,8 @@ box-shadow:  24px 24px 48px #e4e4e4,
     font-size: 2rem;
 }
 
-#favcolor{
-   
-    width: 260px;
-    height: 60px;
+#favcolor::-webkit-color-swatch{
+    border-radius: 50%;
 }
 
 .color-pick{
